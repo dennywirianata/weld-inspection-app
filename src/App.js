@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import UploadForm from './components/UploadForm';
+import TrainingForm from './components/TrainingForm';
+import './styles/global.css'; // Optional: Import global styles
 
 function App() {
+  const [inspectionResult, setInspectionResult] = useState('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Weld Joint Inspection System</h1>
+      <UploadForm onResult={setInspectionResult} />
+      <div>
+        <h3>Inspection Results</h3>
+        <p>{inspectionResult}</p>
+      </div>
+      <TrainingForm onTrainingStatus={(status) => console.log(status)} />
     </div>
   );
 }
