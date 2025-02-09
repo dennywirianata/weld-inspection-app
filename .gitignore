@@ -19,4 +19,4 @@ logs/
 *.log
 
 # Temp files
-temp_*/
+temp_*/.env 
