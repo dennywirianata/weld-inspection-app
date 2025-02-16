@@ -25,5 +25,4 @@ logs/
 temp_*/.env 
 
 # Other directories
-backend/uploads
-backend/training_data
+
