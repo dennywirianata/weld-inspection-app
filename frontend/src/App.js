@@ -1,15 +1,12 @@
-// src/App.js
 import React, { useState } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 import Header from './components/Header';
 import PredictImagePage from './components/PredictImagePage';
 import PredictVideoPage from './components/PredictVideoPage';
 import UploadTrainingPage from './components/UploadTrainingPage';
-//import UploadForm from './components/UploadForm';
-//import TrainingForm from './components/TrainingForm';
 import Footer from './components/Footer';
 import Background from './components/Background';
-import './styles/global.css'; // Optional: Import global styles
+import './styles/global.css';
 
 function App() {
   const [inspectionResult, setInspectionResult] = useState('');
@@ -45,14 +42,7 @@ function App() {
       </Tabs>
       <Footer />
     </div>
-        //<h1 className="app-title">Weld Joint Inspection System</h1>
-      //<UploadForm onResult={(data) => {
-       // setInspectionResult(data.result);
-        //setInspectionConfidence(data.confidence);
-      //}} />
-      
-      //<TrainingForm onTrainingStatus={(status) => console.log(status)} />
-    //</div>
+
   );
 }
 

@@ -151,7 +151,7 @@ def upload_file():
     
     return jsonify(result), 200
 
-
+# Endpoint to handle video upload and inspection
 @app.route('/upload/video', methods=['POST'])
 def upload_video():
     if 'file' not in request.files:

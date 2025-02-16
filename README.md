@@ -14,14 +14,26 @@ After downloading the project directory, you can move to the frontend directory 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any errors in the console.
-
 
 ## How to run back-end locally
 
 After downloading the project directory, you can move to the backend directory in console. 
 
-### `python -m venv venv`
+### Create virtual environment
 
+`python -m venv venv`
+
+To install the necessary module in the isolated environment
+
+### Install modules
+
+`pip install -r requirements.txt`
+
+Install all module from requirements file
+
+### Start Flask
+
+`python flask_app.py`
+
+Run the app in debug mode http://127.0.0.1:5000
 
