@@ -5,7 +5,10 @@ node_modules/
 build/
 
 # Environment variables
-.env
+frontend/.env
+
+# Virtual Environment
+backedn/venv/
 
 # IDE-specific files
 .vscode/
