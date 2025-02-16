@@ -8,7 +8,7 @@ build/
 frontend/.env
 
 # Virtual Environment
-backedn/venv/
+backend/venv/
 
 # IDE-specific files
 .vscode/
@@ -23,3 +23,7 @@ logs/
 
 # Temp files
 temp_*/.env 
+
+# Other directories
+backend/uploads
+backend/training_data
